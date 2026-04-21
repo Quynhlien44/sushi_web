@@ -1,0 +1,203 @@
+import { MenuItem, MenuCategory } from '@types/index';
+
+export const menuItems: Record<MenuCategory, MenuItem[]> = {
+  recommended: [
+    {
+      id: 'rec-001',
+      name: 'Dragon Roll',
+      description: 'Eel, cucumber, avocado topped with spicy mayo and eel sauce',
+      price: 18.99,
+      imageUrl: 'https://images.unsplash.com/photo-1553621042-f6e147245704?w=800&auto=format&fit=crop',
+      category: 'recommended',
+      tags: ['signature', 'spicy', 'premium'],
+      isAvailable: true,
+      isFeatured: true,
+      preparationTime: 15,
+      calories: 420,
+    },
+    {
+      id: 'rec-002',
+      name: 'Rainbow Roll',
+      description: 'California roll topped with assorted fresh fish',
+      price: 16.99,
+      imageUrl: 'https://images.unsplash.com/photo-1553621042-f6e147245704?w-800&auto=format&fit=crop',
+      category: 'recommended',
+      tags: ['colorful', 'fresh', 'popular'],
+      isAvailable: true,
+      isFeatured: true,
+      preparationTime: 12,
+      calories: 380,
+    },
+    {
+      id: 'rec-003',
+      name: 'Spicy Tuna Crispy Rice',
+      description: 'Crispy rice cakes topped with spicy tuna and jalapeño',
+      price: 14.99,
+      imageUrl: 'https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=800&auto=format&fit=crop',
+      category: 'recommended',
+      tags: ['spicy', 'crispy', 'appetizer'],
+      isAvailable: true,
+      isFeatured: true,
+      preparationTime: 10,
+      calories: 320,
+    },
+  ],
+  maki: [
+    {
+      id: 'maki-001',
+      name: 'California Roll',
+      description: 'Crab, avocado, cucumber',
+      price: 8.99,
+      imageUrl: '/images/california-roll.jpg',
+      category: 'maki',
+      tags: ['classic', 'vegetarian-friendly'],
+      isAvailable: true,
+      preparationTime: 8,
+      calories: 280,
+    },
+    {
+      id: 'maki-002',
+      name: 'Spicy Salmon Roll',
+      description: 'Salmon, spicy mayo, cucumber',
+      price: 10.99,
+      imageUrl: '/images/spicy-salmon-roll.jpg',
+      category: 'maki',
+      tags: ['spicy', 'salmon'],
+      isAvailable: true,
+      preparationTime: 9,
+      calories: 310,
+    },
+    {
+      id: 'maki-003',
+      name: 'Vegetable Roll',
+      description: 'Avocado, cucumber, carrot, asparagus',
+      price: 7.99,
+      imageUrl: '/images/vegetable-roll.jpg',
+      category: 'maki',
+      tags: ['vegetarian', 'healthy'],
+      isAvailable: true,
+      preparationTime: 7,
+      calories: 240,
+    },
+  ],
+  uramaki: [
+    {
+      id: 'uramaki-001',
+      name: 'Philadelphia Roll',
+      description: 'Salmon, cream cheese, cucumber',
+      price: 12.99,
+      imageUrl: '/images/philadelphia-roll.jpg',
+      category: 'uramaki',
+      tags: ['cream cheese', 'salmon'],
+      isAvailable: true,
+      preparationTime: 11,
+      calories: 350,
+    },
+    {
+      id: 'uramaki-002',
+      name: 'Caterpillar Roll',
+      description: 'Eel, cucumber, avocado on top',
+      price: 15.99,
+      imageUrl: '/images/caterpillar-roll.jpg',
+      category: 'uramaki',
+      tags: ['eel', 'avocado'],
+      isAvailable: true,
+      preparationTime: 13,
+      calories: 380,
+    },
+  ],
+  terimaki: [
+    {
+      id: 'terimaki-001',
+      name: 'Teriyaki Salmon Roll',
+      description: 'Salmon, teriyaki sauce, green onion',
+      price: 13.99,
+      imageUrl: '/images/teriyaki-salmon-roll.jpg',
+      category: 'terimaki',
+      tags: ['teriyaki', 'salmon'],
+      isAvailable: true,
+      preparationTime: 12,
+      calories: 340,
+    },
+  ],
+  sashimi: [
+    {
+      id: 'sashimi-001',
+      name: 'Salmon Sashimi',
+      description: 'Fresh salmon slices',
+      price: 14.99,
+      imageUrl: '/images/salmon-sashimi.jpg',
+      category: 'sashimi',
+      tags: ['fresh', 'salmon'],
+      isAvailable: true,
+      preparationTime: 5,
+      calories: 180,
+    },
+    {
+      id: 'sashimi-002',
+      name: 'Tuna Sashimi',
+      description: 'Fresh tuna slices',
+      price: 16.99,
+      imageUrl: '/images/tuna-sashimi.jpg',
+      category: 'sashimi',
+      tags: ['fresh', 'tuna', 'premium'],
+      isAvailable: true,
+      preparationTime: 5,
+      calories: 190,
+    },
+  ],
+  gunkan: [
+    {
+      id: 'gunkan-001',
+      name: 'Salmon Roe Gunkan',
+      description: 'Seaweed wrapped rice topped with salmon roe',
+      price: 11.99,
+      imageUrl: '/images/salmon-roe-gunkan.jpg',
+      category: 'gunkan',
+      tags: ['roe', 'salmon'],
+      isAvailable: true,
+      preparationTime: 7,
+      calories: 220,
+    },
+  ],
+  'taco-sushi': [
+    {
+      id: 'taco-001',
+      name: 'Spicy Tuna Taco',
+      description: 'Crispy wonton shell with spicy tuna and avocado',
+      price: 9.99,
+      imageUrl: '/images/spicy-tuna-taco.jpg',
+      category: 'taco-sushi',
+      tags: ['spicy', 'tuna', 'crispy'],
+      isAvailable: true,
+      preparationTime: 8,
+      calories: 260,
+    },
+    {
+      id: 'taco-002',
+      name: 'Salmon Taco',
+      description: 'Crispy wonton shell with salmon and spicy mayo',
+      price: 9.99,
+      imageUrl: '/images/salmon-taco.jpg',
+      category: 'taco-sushi',
+      tags: ['salmon', 'crispy'],
+      isAvailable: true,
+      preparationTime: 8,
+      calories: 250,
+    },
+  ],
+};
+
+export const featuredItems = menuItems.recommended;
+
+export const getAllMenuItems = (): MenuItem[] => {
+  return Object.values(menuItems).flat();
+};
+
+export const getMenuItemsByCategory = (category: MenuCategory): MenuItem[] => {
+  return menuItems[category] || [];
+};
+
+export const getMenuItemById = (id: string): MenuItem | undefined => {
+  return getAllMenuItems().find(item => item.id === id);
+};
