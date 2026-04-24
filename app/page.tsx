@@ -1,4 +1,5 @@
 import HeroSection from "../components/shared/HeroSection";
+import HomeOrderGuide from "../components/shared/HomeOrderGuide";
 
 const featureBlocks = [
   {
@@ -43,11 +44,10 @@ export default function HomePage() {
             <div className="home-intro-copy home-intro-copy-centered">
               <p>
                 Noirumi Studio is an online-first sushi concept built for the way
-                people actually eat now. A tighter menu keeps the food clean and precise, while packaging
-                is made to arrive the way it should feel on the table — calm,
-                composed, and quietly special.
-                What surrounds the food is treated with the same care as what’s
-                inside.
+                people actually eat now. A tighter menu keeps the food clean and precise,
+                while packaging is made to arrive the way it should feel on the table —
+                calm, composed, and quietly special. What surrounds the food is treated
+                with the same care as what’s inside.
               </p>
             </div>
           </div>
@@ -80,28 +80,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="home-link-strip">
-        <div className="frame-inner">
-          <div className="home-link-strip-inner">
-            <p className="home-link-strip-copy">
-              Start with the homepage essentials, then continue into the wider
-              Noirumi world through concept, gallery, and menu.
-            </p>
-
-            <div className="home-link-strip-actions">
-              <a href="/concept" className="home-link-pill">
-                Concept
-              </a>
-              <a href="/gallery" className="home-link-pill">
-                Gallery
-              </a>
-              <a href="/menu" className="home-link-pill">
-                Menu
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HomeOrderGuide />
     </>
   );
 }
