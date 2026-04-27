@@ -207,7 +207,7 @@ export default function HomeOrderGuide() {
 
   return (
     <section className="home-order-tabs">
-      <div className="frame-inner">
+  
         <div className="home-order-tabs-inner">
           <div
             className="home-order-tabs-nav"
@@ -326,7 +326,7 @@ export default function HomeOrderGuide() {
               </div>
             </div>
           )}
-        </div>
+        
       </div>
     </section>
   );

@@ -37,7 +37,7 @@ export default function HomePage() {
       <HeroSection />
 
       <section className="home-intro">
-        <div className="frame-inner">
+        
           <div className="home-intro-panel">
             <p className="eyebrow home-intro-eyebrow">Homepage intro</p>
 
@@ -50,7 +50,7 @@ export default function HomePage() {
                 with the same care as what’s inside.
               </p>
             </div>
-          </div>
+      
         </div>
       </section>
 
