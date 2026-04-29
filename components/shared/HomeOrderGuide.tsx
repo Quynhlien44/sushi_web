@@ -207,7 +207,7 @@ export default function HomeOrderGuide() {
 
   return (
     <section className="home-order-tabs">
-  
+        <div className="container-shell">
         <div className="home-order-tabs-inner">
           <div
             className="home-order-tabs-nav"
@@ -308,9 +308,20 @@ export default function HomeOrderGuide() {
                         isPointActive ? "is-active" : ""
                       }`}
                       onClick={() => handlePointChange(point.id)}
+                      aria-pressed={isPointActive}
                     >
                       <div className="home-order-point-main">
-                        <span className="home-order-point-arrow">▸</span>
+                        <span className="home-order-point-arrow" aria-hidden="true">
+                          <svg viewBox="0 0 20 20" fill="none">
+                            <path
+                              d="M7 4.5L12.5 10L7 15.5"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                        </span>
                         <div className="home-order-point-text">
                           <span className="home-order-point-line-title">
                             {point.title}
@@ -326,7 +337,7 @@ export default function HomeOrderGuide() {
               </div>
             </div>
           )}
-        
+        </div>
       </div>
     </section>
   );
